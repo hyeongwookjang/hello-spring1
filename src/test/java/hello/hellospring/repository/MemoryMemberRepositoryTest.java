@@ -21,8 +21,7 @@ public class MemoryMemberRepositoryTest {
 //        assertThat(member)가 isEqualTo(result)랑 똑같은지 확인
         assertThat(member).isEqualTo(null);
         System.out.println("result =" + (result == member));
-
-
+        
     }
 
 
