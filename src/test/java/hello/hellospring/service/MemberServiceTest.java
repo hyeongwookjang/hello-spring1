@@ -30,6 +30,28 @@ class MemberServiceTest {
     }
 
     @Test
+    public void 중복_회원_예외() {
+//        given
+        Member member1 = new Member();
+        member1.setName("spring");
+
+        Member member2 = new Member();
+        member2.setName("spring");
+
+//        when
+        memberService.join(member1);
+        try {
+            memberService.join(member2);
+            fail();
+        } catch (IllegalStateException e){
+            AssertThat(message)
+
+        }
+
+//        then
+    }
+
+    @Test
     void findMembers() {
     }
 

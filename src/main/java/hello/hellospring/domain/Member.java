@@ -22,4 +22,3 @@ public class Member {
         this.name = name;
     }
 }
-dsaddasd
